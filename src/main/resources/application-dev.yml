@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/task_organizer_db
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+jwt_secret_key: ZRwnCyyLJyj9vYNOzcSWl9lZH1nxKxXjmK4Sj6PhyvJ4nloNtBM7llutlHjuy5x9
+allowed:
+  origins: http://dev:8080
+
